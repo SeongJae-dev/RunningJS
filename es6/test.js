@@ -14,3 +14,21 @@ function say({ subject, verb, object }) {
 for (let s of sentences) {
     say(s);
 }
+
+const t = true;
+const f = false;
+
+const test = (t, f) => {
+    this.t = t;
+    this.f = f;
+    let value = '';
+    if(t && f){
+        value = true;
+    }else{
+        value = false;
+    }
+
+    return value;
+}
+
+console.log(test(f,f));
